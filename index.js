@@ -38,7 +38,9 @@ var loadPlugin = createSafeThunk("loadPlugin", function (logger, filePath, fallB
 var renderTemplate = createSafeThunk("renderTemplate", function (logger, filePath, doc) {
   logger.debug("args", { filePath, docType: typeof(doc) });
   var template = fs.readFileSync(filePath, "utf8");
-  return ejs.render(template, doc);
+  return ejs.render(template, doc, {
+    filename: filePath
+  });
 });
 
 // export the tool
