@@ -29,6 +29,7 @@ try {
 function main () {
   var filePath = argv.input || argv.i;
   var doc = loadYAMLFile(filePath);
+  console.log(JSON.stringify(doc));
 }
 
 // helpers
@@ -37,7 +38,7 @@ function configure () {
   logger.configure({
     level: DEBUG ? "debug": "info",
     transports: [
-      new winston.transports.Console()
+      new logger.transports.Console()
     ]
   });
 }
