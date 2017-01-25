@@ -1,0 +1,21 @@
+{
+  "name": "estimator",
+  "version": "1.0.0",
+  "description": "Convert YAML client estimates into Mardown documents.",
+  "main": "index.js",
+  "dependencies": {
+    "js-yaml": "^3.7.0",
+    "minimist": "^1.2.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dhruvio/estimator.git"
+  },
+  "author": "Dhruv Dang",
+  "license": "UNLICENSED"
+}

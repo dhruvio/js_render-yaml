@@ -1,0 +1,4 @@
+*.swp
+*.tmp
+tmp/
+node_modules/
