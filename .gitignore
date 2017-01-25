@@ -1,4 +1,5 @@
 *.swp
 *.tmp
+*.log
 tmp/
 node_modules/

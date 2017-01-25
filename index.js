@@ -47,9 +47,9 @@ module.exports = function main (config) {
   // bootstrap the tool
   config = defaults(config, defaultConfig);
   configure(config.logLevel);
-  logger.debug("bootstrap", { defaultConfig, argv });
   // set up the core logic
   var run = createSafeThunk("main", function (logger, config) {
+    logger.debug("bootstrap", { defaultConfig, config });
     var doc = loadYAMLFile(config.inputFilePath);
     var plugin = loadPlugin(config.pluginFilePath, config.defaultPluginFilePath);
     doc = plugin(doc) || doc;
