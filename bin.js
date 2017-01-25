@@ -10,4 +10,3 @@ renderYAML({
   templateFilePath: argv.template || argv.t,
   pluginFilePath: argv.plugin || argv.p
 });
-
